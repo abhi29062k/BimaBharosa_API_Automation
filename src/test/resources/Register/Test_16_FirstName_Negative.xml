@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaAPISuite">
+    <test name="RegisterModule">
+        <classes>
+            <class name="Register.Test_16_FirstName_Negative"></class>
+        </classes>
+    </test>
+</suite>

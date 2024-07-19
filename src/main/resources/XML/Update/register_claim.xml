@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">
+    <soapenv:Header>
+        <web:Authenticate_Info>
+            <!--Optional:-->
+            <web:UserName>IRDAUSER</web:UserName>
+            <!--Optional:-->
+            <web:Password>IRDAUSER</web:Password>
+            <web:EntityId>16</web:EntityId>
+        </web:Authenticate_Info>
+    </soapenv:Header>
+    <soapenv:Body>
+        <web:RegisterComplaint>
+            <!--Optional:-->
+            <web:InputElement>
+                <Complaints>
+                    <Complaint>
+                        <First_Name>Manisha Buwa</First_Name>
+                        <Mobile_Number>1010101010</Mobile_Number>
+                        <User_Type>I</User_Type>
+                        <Entity_Complaint_Ref_Number>TEST97217</Entity_Complaint_Ref_Number>
+                        <Complaint_Details>Registration of complaint</Complaint_Details>
+                        <Complaint_Receipt_Date>18-07-2024</Complaint_Receipt_Date>
+                        <Complaint_Date>18-07-2024</Complaint_Date>
+                        <State_Id>1</State_Id>
+                        <District_Id>1</District_Id>
+                        <Complaint_Status_Id>1</Complaint_Status_Id>
+                        <Insurance_Type_Id>2</Insurance_Type_Id>
+                        <Policy_Type_Id>5</Policy_Type_Id>
+                        <Complaint_Type_Id>14</Complaint_Type_Id>
+                        <Complaint_Description_Id>127</Complaint_Description_Id>
+                        <Complaint_Against_Type_Id>2</Complaint_Against_Type_Id>
+                        <Source_Of_Complaint>1</Source_Of_Complaint>
+                        <Policy_Number>12321432</Policy_Number>
+                        <Option>1</Option>
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>
+                        <Trans_Login_Id>HDFCGADMIN</Trans_Login_Id>
+                        <Mode>1</Mode>
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>
+                        <Identifier_Type>1</Identifier_Type>
+                        <Broker_License_Number>21341312</Broker_License_Number>
+                    </Complaint>
+                </Complaints>
+            </web:InputElement>
+        </web:RegisterComplaint>
+    </soapenv:Body>
+</soapenv:Envelope>

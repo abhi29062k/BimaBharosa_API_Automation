@@ -1,0 +1,49 @@
+2024-05-15T15:46:06,655 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T15:46:09,735 [main] ERROR (Request.java:48) - Status code is other than 200
+2024-05-15T15:46:09,776 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Date>15-05-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>15-05-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Against_Type_Id>1</Complaint_Against_Type_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST294063</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>$</Identifier_Type> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>

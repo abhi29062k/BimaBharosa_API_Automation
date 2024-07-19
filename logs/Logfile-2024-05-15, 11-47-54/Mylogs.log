@@ -1,0 +1,1729 @@
+2024-05-15T11:47:54,823 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:47:57,648 [main] INFO  (Test_1_StatusChangeDate_Validation.java:37) - Complaint status update with future date is not updated with error code
+2024-05-15T11:47:58,652 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001842</IRDA_Token_Number>  
+                        <Status_Change_Date>22-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST970375</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:47:58,707 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001842</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST970375</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0091</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:47:58,708 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:47:58,712 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:47:59,102 [main] INFO  (Test_1_StatusChangeDate_Validation.java:73) - complaint status update date  with valid date is updated successfully! Error code 
+2024-05-15T11:47:59,263 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001843</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST381593</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:47:59,268 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001843</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST381593</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:47:59,268 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:47:59,272 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:47:59,609 [main] INFO  (Test_1_StatusChangeDate_Validation.java:108) - Complaint status update with date format YYYY_DD_MM is not updated.Error code ERR_0091
+2024-05-15T11:47:59,849 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001844</IRDA_Token_Number>  
+                        <Status_Change_Date>2024-04-21</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST757834</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:47:59,852 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001844</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST757834</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0091</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:47:59,852 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:47:59,855 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:00,172 [main] INFO  (Test_1_StatusChangeDate_Validation.java:142) - Complaint status update with date format MM_DD_YYYY is not updated.Error code ERR_0091
+2024-05-15T11:48:00,361 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001845</IRDA_Token_Number>  
+                        <Status_Change_Date>04-21-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST618692</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:00,364 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001845</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST618692</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0091</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:00,365 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:00,367 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:00,686 [main] INFO  (Test_1_StatusChangeDate_Validation.java:177) - Complaint status update with date format 00_00_0000 is not updated.Error code ERR_0091
+2024-05-15T11:48:00,856 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001846</IRDA_Token_Number>  
+                        <Status_Change_Date>00-00-0000</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST644708</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:00,859 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001846</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST644708</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0091</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:00,859 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:00,861 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:01,131 [main] INFO  (Test_1_StatusChangeDate_Validation.java:211) - Complaint status update with date format alphabet_special character is not updated. Error code ERR_0091
+2024-05-15T11:48:01,364 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001847</IRDA_Token_Number>  
+                        <Status_Change_Date>ad-qwe-!@#$</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST540274</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:01,366 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001847</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST540274</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0091</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:01,367 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:01,370 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:01,700 [main] INFO  (Test_1_StatusChangeDate_Validation.java:246) - Complaint with Status Change date older than complaint receipt date is not updated.Error code ERR_0022,ERR_0023,ERR_0024
+2024-05-15T11:48:01,829 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001848</IRDA_Token_Number>  
+                        <Status_Change_Date>11-02-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST93426</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:01,831 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001848</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST93426</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0022,ERR_0023,ERR_0024</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:01,832 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:01,833 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:02,341 [main] INFO  (Test_1_StatusChangeDate_Validation.java:289) - Complaint with Status Change date older than previous status change date is not updated.Error code ERR_0022,ERR_0023,ERR_0024
+2024-05-15T11:48:02,570 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001849</IRDA_Token_Number>  
+                        <Status_Change_Date>01-08-2023</Status_Change_Date>  
+                        <Complaint_Status_Id>3</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST203073</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:02,573 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001849</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST203073</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0022,ERR_0023,ERR_0024</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:02,573 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:02,576 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:02,914 [main] INFO  (Test_2_NewComplaint.java:37) - Test Passed :New to Pending status change not updated.Error code ERR_0021A
+2024-05-15T11:48:03,012 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001850</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>3</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST833190</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:03,014 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001850</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST833190</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:03,014 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:03,016 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:03,272 [main] INFO  (Test_2_NewComplaint.java:67) - New to Attened_to status change not updated.Error code ERR_0214,ERR_0021A
+2024-05-15T11:48:03,432 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001851</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>4</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST538244</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:03,433 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001851</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST538244</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0214,ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:03,434 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:03,435 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:03,793 [main] ERROR (Test_2_NewComplaint.java:99) - New to Attened_to status change not updated.
+2024-05-15T11:48:04,008 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001852</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>5</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST479444</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:04,010 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001852</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST479444</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0138</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:04,010 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:04,012 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:04,297 [main] INFO  (Test_2_NewComplaint.java:124) - New to Reopen status change not updated.Error code ERR_0021A
+2024-05-15T11:48:04,423 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001853</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>6</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST630114</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:04,426 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001853</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST630114</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:04,427 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:04,428 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:04,705 [main] INFO  (Test_2_NewComplaint.java:154) - New to Close status change not updatedError code ERR_0021A
+2024-05-15T11:48:04,847 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001854</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>7</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST572901</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:04,849 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001854</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST572901</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:04,850 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:04,851 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:05,461 [main] INFO  (Test_3_AckComplaint.java:42) - Acknowledgement to New status change not updatedError code ERR_0021A
+2024-05-15T11:48:05,599 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001855</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST390439</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:05,602 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001855</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST390439</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:05,602 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:05,604 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:06,104 [main] INFO  (Test_3_AckComplaint.java:77) - Acknowledgement to Attended status change not updatedError code ERR_0021A
+2024-05-15T11:48:06,244 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001856</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>4</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST31503</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:06,246 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001856</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST31503</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:06,246 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:06,248 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:06,688 [main] INFO  (Test_3_AckComplaint.java:112) - Acknowledgement to Escalation status change (before  15 days TAT of complaint registration) not updatedError code ERR_0138
+2024-05-15T11:48:06,803 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001857</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>5</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST132441</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:06,807 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001857</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST132441</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0138</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:06,808 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:06,810 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:07,222 [main] INFO  (Test_3_AckComplaint.java:147) - Acknowledgement to Reopen status change not updatedError code ERR_0021A
+2024-05-15T11:48:07,341 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001858</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>6</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST855008</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:07,343 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001858</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST855008</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:07,343 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:07,345 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:07,780 [main] INFO  (Test_3_AckComplaint.java:181) - Acknowledgement to Close status change not updatedError code ERR_0021A
+2024-05-15T11:48:07,953 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001859</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>7</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST782556</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:08,017 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001859</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST782556</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:08,018 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:08,020 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:08,742 [main] INFO  (Test_4_PenComplaint.java:46) - Pending to new status change not updated. Error code ERR_0021A
+2024-05-15T11:48:08,866 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001860</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST718830</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:08,868 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001860</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST718830</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:08,869 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:08,870 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:09,582 [main] INFO  (Test_4_PenComplaint.java:83) - Pending to ack status change not updated. Error code ERR_0021A
+2024-05-15T11:48:09,780 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001861</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST432479</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:09,781 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001861</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST432479</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:09,782 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:09,783 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:13,385 [main] INFO  (Test_4_PenComplaint.java:118) - Pending to Escalation status change (before  15 days TAT of complaint registration) not updatedError code ERR_0137
+2024-05-15T11:48:13,576 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001862</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>5</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST591972</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:13,578 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001862</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST591972</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0137</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:13,578 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:13,581 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:14,272 [main] INFO  (Test_4_PenComplaint.java:156) - Pending to Reopen status change not updated. Error code ERR_0021A
+2024-05-15T11:48:14,522 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001863</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>6</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST1680</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:14,524 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001863</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST1680</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:14,525 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:14,527 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:15,136 [main] INFO  (Test_4_PenComplaint.java:190) - Pending to close status change not updated. Error code ERR_0021A
+2024-05-15T11:48:15,258 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001864</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>7</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST746970</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:15,260 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001864</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST746970</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0021A</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:15,260 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:15,262 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:16,110 [main] INFO  (Test_4_PenComplaint.java:243) - Pending to Attent_to with claim status change not updated. Error code ERR_0124
+2024-05-15T11:48:16,303 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001865</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>4</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST510030</Entity_Complaint_Ref_Number>
+                    <Type_of_disposal>1</Type_of_disposal><Remarks>Remarks</Remarks></Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:16,304 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001865</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST510030</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0124</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:16,305 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:16,307 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:16,609 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:46) - Status is not Updated without Status Change Date fieldError code ERR_0090
+2024-05-15T11:48:16,708 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001866</IRDA_Token_Number>  
+                        <Status_Change_Date/>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST183581</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:16,709 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001866</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST183581</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0090</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:16,709 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:16,711 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:16,982 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:77) - Status is not Updated without IRDA Token Number field with error codeError code ERR_0089
+2024-05-15T11:48:17,122 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number/>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST416476</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:17,125 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST416476</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0089</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:17,125 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:17,127 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:17,423 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:107) - Status is not Updated with null Complaint Ref fieldError code ERR_0017
+2024-05-15T11:48:17,610 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001868</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number/>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:17,612 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001868</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER/>
+            <ERROR_CODES>ERR_0017</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:17,613 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:17,615 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:17,943 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:138) - Status is Updated without Complaint Status Id field. Error code 
+2024-05-15T11:48:18,047 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001869</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id/>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST965772</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:18,049 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001869</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST965772</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:18,049 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:18,050 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:18,297 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:171) - Status is not Updated without Trans Login Id field. With error code Error code ERR_0040
+2024-05-15T11:48:18,430 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001870</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id/>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST629102</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:18,432 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001870</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST629102</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0040</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:18,432 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:18,433 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:18,751 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:204) - Status is not Updated without Option field. Error code ERR_0060
+2024-05-15T11:48:18,901 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001871</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option/>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST272213</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:18,903 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001871</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST272213</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0060</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:18,903 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:18,904 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:19,146 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:237) - Status is not Updated without Mode field. Error code ERR_0063
+2024-05-15T11:48:19,273 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001872</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode/>  
+                        <Entity_Complaint_Ref_Number>TEST193385</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:19,277 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001872</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST193385</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0063</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:19,277 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:19,279 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:19,522 [main] INFO  (Test_5_Ack_Pen_MandateField_Validation.java:272) - Status is not Updated Invalid Mode fieldError code ERR_0095
+2024-05-15T11:48:19,642 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001873</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>1</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST686622</Entity_Complaint_Ref_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-05-15T11:48:19,644 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>05-24-001873</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST686622</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0095</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-05-15T11:48:19,644 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-05-15T11:48:19,645 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-15T11:48:19,885 [main] ERROR (Request.java:77) - Status code is other than 200
+2024-05-15T11:48:20,047 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>05-24-001874</IRDA_Token_Number>  
+                        <Status_Change_Date>15-05-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>2</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>

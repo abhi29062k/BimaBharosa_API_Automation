@@ -1,0 +1,1046 @@
+2024-07-16T13:36:39,672 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:42,227 [main] INFO  (Test_10_RegisterComplaint_Against_NonLifeInsuranceCompany.java:47) - Test Passed : Complaint Registered Against Non-Life Insurance Company
+2024-07-16T13:36:42,271 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>16</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST34982</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>1</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>2</Insurance_Type_Id>  
+                        <Policy_Type_Id>5</Policy_Type_Id>  
+                        <Complaint_Type_Id>7</Complaint_Type_Id>  
+                        <Complaint_Description_Id>89</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>HDFCGADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:42,322 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>07-24-001237</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST34982</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:42,323 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:42,327 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:42,517 [main] ERROR (Test_11_BrokerLicenseNumber_Negative.java:55) - Test Failed : Invalid broker license number is working
+2024-07-16T13:36:42,538 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST158090</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>1</State_Id>  
+                        <District_Id>1</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>2</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Broker_License_Number>$#%TY</Broker_License_Number> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:42,544 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>07-24-001238</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST158090</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:42,544 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:42,548 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:42,708 [main] INFO  (Test_11_BrokerLicenseNumber_Negative.java:101) - Test Passed : Broker License Number is Mandatory
+2024-07-16T13:36:42,721 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST663986</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>1</State_Id>  
+                        <District_Id>1</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>2</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                         
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:42,726 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST663986</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0079</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:42,727 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:42,728 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:42,884 [main] INFO  (Test_12_IntermediaryName_Negative.java:50) - Test Passed : Intermediary name is Mandatory
+2024-07-16T13:36:42,893 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST356046</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>7</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                          
+                        <Intermediary_License_Number>IRDA/IND/SLA-10181</Intermediary_License_Number> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:42,896 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST356046</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0084</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:42,897 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:42,898 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:43,057 [main] ERROR (Test_12_IntermediaryName_Negative.java:106) - Test Failed : Invalid intermediary name is working
+2024-07-16T13:36:43,072 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST846369</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>7</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Intermediary_License_Number>IRDA/IND/SLA-10181</Intermediary_License_Number>  
+                        <Intermediary_Name>ASD#67</Intermediary_Name>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:43,076 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>07-24-001239</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST846369</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:43,077 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:43,079 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:43,205 [main] INFO  (Test_13_IntermediaryLicenseNumber_Negative.java:50) - Test Passed : Intermediary License Number is Mandatory
+2024-07-16T13:36:43,213 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST231580</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>7</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                          
+                        <Intermediary_Name>ASHOK KUMAR SINGH</Intermediary_Name> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:43,216 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST231580</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0085</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:43,216 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:43,219 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:43,506 [main] ERROR (Test_13_IntermediaryLicenseNumber_Negative.java:105) - Test Failed : Invalid intermediary license number is working
+2024-07-16T13:36:43,515 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <First_Name>Sandeep Kashyap</First_Name>  
+                        <Mobile_Number>8691959368</Mobile_Number>  
+                        <User_Type>I</User_Type>  
+                        <Entity_Complaint_Ref_Number>TEST817147</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of complaint</Complaint_Details>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>7</Complaint_Against_Type_Id>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Intermediary_Name>ASHOK KUMAR SINGH</Intermediary_Name>  
+                        <Intermediary_License_Number>123456</Intermediary_License_Number>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:43,517 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>07-24-001240</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST817147</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:43,517 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:43,518 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:43,651 [main] INFO  (Test_14_StateIDAndDistrictID_Negative.java:50) - Test Passed : State ID is Mandatory
+2024-07-16T13:36:43,657 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                          
+                        <District_Id>332</District_Id>  
+                        <Complaint_Against_Type_Id>1</Complaint_Against_Type_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST772119</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:43,660 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST772119</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0048</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:43,660 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:43,662 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:43,834 [main] INFO  (Test_14_StateIDAndDistrictID_Negative.java:96) - Test Passed : Invalid State ID is not working
+2024-07-16T13:36:43,841 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Against_Type_Id>1</Complaint_Against_Type_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST952019</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>ABC</State_Id>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:43,844 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST952019</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0001</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:43,844 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:43,846 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:44,040 [main] INFO  (Test_14_StateIDAndDistrictID_Negative.java:146) - Test Passed : District ID is Mandatory
+2024-07-16T13:36:44,049 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                          
+                        <Complaint_Against_Type_Id>1</Complaint_Against_Type_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST807521</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:44,052 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST807521</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0047</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:44,053 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:44,054 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:44,239 [main] INFO  (Test_14_StateIDAndDistrictID_Negative.java:192) - Test Passed : Invalid District ID is not working
+2024-07-16T13:36:44,251 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <Complaint_Against_Type_Id>1</Complaint_Against_Type_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST698787</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>PQR</District_Id>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:44,255 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST698787</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0002</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:44,256 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:44,258 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:44,529 [main] INFO  (Test_15_ComplaintAgainstTypeID_Negative.java:47) - Test Passed : Complaint Against Type Id is Mandatory
+2024-07-16T13:36:44,544 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                          
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST343235</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:44,548 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST343235</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0055</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:44,549 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:44,552 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:44,679 [main] INFO  (Test_15_ComplaintAgainstTypeID_Negative.java:91) - Test Passed : Complaint Against Type ID should be valid numeric value
+2024-07-16T13:36:44,684 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST47755</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Against_Type_Id>A</Complaint_Against_Type_Id>
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:44,686 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST47755</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0056</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:44,686 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:44,687 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:44,874 [main] INFO  (Test_15_ComplaintAgainstTypeID_Negative.java:135) - Test Passed : Complaint Against Type ID should be valid numeric value
+2024-07-16T13:36:44,881 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST263107</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Against_Type_Id>@</Complaint_Against_Type_Id> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:44,884 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST263107</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0056</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:44,884 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:44,885 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-16T13:36:45,044 [main] INFO  (Test_15_ComplaintAgainstTypeID_Negative.java:180) - Test Passed : Invalid Complaint Against Type ID is not working
+2024-07-16T13:36:45,053 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:RegisterComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <Complaint_Status_Id>1</Complaint_Status_Id>  
+                        <First_Name>Abhishek Gupta</First_Name>  
+                        <Mobile_Number>9967465389</Mobile_Number>  
+                        <Entity_Complaint_Ref_Number>TEST297902</Entity_Complaint_Ref_Number>  
+                        <Complaint_Details>Registration of Complaint</Complaint_Details>  
+                        <Insurance_Type_Id>1</Insurance_Type_Id>  
+                        <Policy_Type_Id>1</Policy_Type_Id>  
+                        <Complaint_Type_Id>1</Complaint_Type_Id>  
+                        <Complaint_Description_Id>1</Complaint_Description_Id>  
+                        <Source_Of_Complaint>1</Source_Of_Complaint>  
+                        <Policy_Number>123456789</Policy_Number>  
+                        <Option>1</Option>  
+                        <Addressed_To_Insurer>Y</Addressed_To_Insurer>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Mode>1</Mode>  
+                        <Policy_Proposal_Cert_ClaimNumber>10529899</Policy_Proposal_Cert_ClaimNumber>  
+                        <Identifier_Type>1</Identifier_Type>  
+                        <Complaint_Date>16-07-2024</Complaint_Date>  
+                        <Complaint_Receipt_Date>16-07-2024</Complaint_Receipt_Date>  
+                        <User_Type>I</User_Type>  
+                        <State_Id>21</State_Id>  
+                        <District_Id>332</District_Id>  
+                        <Complaint_Against_Type_Id>15</Complaint_Against_Type_Id> 
+                    </Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:RegisterComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-16T13:36:45,055 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <RegisterComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <RegisterComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER/>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST297902</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES>ERR_0010</ERROR_CODES>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </RegisterComplaintResult>
+    </RegisterComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-16T13:36:45,056 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
+2024-07-16T13:36:45,057 [main] INFO  (Main.java:40) - -------------Test Execution started--------------

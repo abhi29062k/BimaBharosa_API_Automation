@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaSuite">
+    <test name="RegisterModule">
+        <classes>
+            <class name="Register.Test_1_RegisterComplaint_PresentDate"></class>
+            <class name="Register.Test_2_RegisterComplaint_PastDate"></class>
+            <class name="Register.Test_3_RegisterComplaint_Dates_Negative"></class>
+            <class name="Register.Test_4_UserType_Negative"></class>
+            <class name="Register.Test_5_RegisterComplaint_AgainstBroker"></class>
+            <class name="Register.Test_6_RegisterComplaint_AgainstSurveyor"></class>
+            <class name="Register.Test_7_RegisterComplaint_AgainstTPA"></class>
+            <class name="Register.Test_8_RegisterComplaint_AgainstAgent"></class>
+            <class name="Register.Test_9_RegisterComplaint_Against_LifeInsuranceCompany"></class>
+            <class name="Register.Test_10_RegisterComplaint_Against_NonLifeInsuranceCompany"></class>
+            <class name="Register.Test_11_BrokerLicenseNumber_Negative"></class>
+            <class name="Register.Test_12_IntermediaryName_Negative"></class>
+            <class name="Register.Test_13_IntermediaryLicenseNumber_Negative"></class>
+            <class name="Register.Test_14_StateIDAndDistrictID_Negative"></class>
+            <class name="Register.Test_15_ComplaintAgainstTypeID_Negative"></class>
+            <class name="Register.Test_16_FirstName_Negative"></class>
+            <class name="Register.Test_17_MobileNumber_Negative"></class>
+            <class name="Register.Test_18_EntityComplaintReferenceNumber_Negative"></class>
+            <class name="Register.Test_19_ComplaintDetails_Negative"></class>
+            <class name="Register.Test_20_InsuranceTypeID_Negative"></class>
+            <class name="Register.Test_21_PolicyTypeID_Negative"></class>
+            <class name="Register.Test_22_ComplaintTypeID_Negative"></class>
+            <class name="Register.Test_23_ComplaintDescriptionTypeID_Negative"></class>
+            <class name="Register.Test_24_SourceOfComplaint_Negative"></class>
+            <class name="Register.Test_25_PolicyNumber_Negative"></class>
+            <class name="Register.Test_26_Option_Negative"></class>
+            <class name="Register.Test_27_AddressedToInsurer_Negative"></class>
+            <class name="Register.Test_28_TransLoginId_Negative"></class>
+            <class name="Register.Test_29_Mode_Negative"></class>
+            <class name="Register.Test_30_PolicyProposalCertClaimNumber_Negative"></class>
+            <class name="Register.Test_31_IdentifierType_Negative"></class>
+        </classes>
+    </test>
+    <test name="UpdateModule">
+        <classes>
+            <class name="Update.Test_1_StatusChangeDate_Validation"></class>
+            <class name="Update.Test_2_NewComplaint"></class>
+            <class name="Update.Test_3_AckComplaint"></class>
+            <class name="Update.Test_4_PenComplaint"></class>
+            <class name="Update.Test_5_Ack_Pen_MandateField_Validation"></class>
+            <class name="Update.Test_6_pen_to_Att_mand_field_validation"></class>
+            <class name="Update.Test_7_Att_to_Complaint"></class>
+            <class name="Update.Test_8_Type_Of_Disposal"></class>
+            <class name="Update.Test_9_EscComplaint"></class>
+            <class name="Update.Test_10_RopComplaint"></class>
+            <class name="Update.Test_11_Cls_Negative"></class>
+            <class name="Update.Test_12_not_pertain_to"></class>
+            <class name="Update.Test_13_branch_code_validation"></class>
+            <class name="Update.Test_14_status_update_with_diff_transLogin_Id"></class>
+            <class name="Update.Test_15_UpdateComplaint_Positive"></class>
+        </classes>
+    </test>
+</suite>

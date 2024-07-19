@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>TestNG:  RegisterModule</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegisterModule</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>82/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 16 15:13:39 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20375 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Register.Test_14_StateIDAndDistrictID_Negative.test_Null_DistrictID()'><b>test_Null_DistrictID</b><br>Test class: Register.Test_14_StateIDAndDistrictID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_14_StateIDAndDistrictID_Negative@16c63f5</td></tr>
+<tr>
+<td title='Register.Test_26_Option_Negative.test_Option_Invalid()'><b>test_Option_Invalid</b><br>Test class: Register.Test_26_Option_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_26_Option_Negative@4df5bcb4</td></tr>
+<tr>
+<td title='Register.Test_26_Option_Negative.test_Option_Alphabetical()'><b>test_Option_Alphabetical</b><br>Test class: Register.Test_26_Option_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_26_Option_Negative@4df5bcb4</td></tr>
+<tr>
+<td title='Register.Test_27_AddressedToInsurer_Negative.test_Addressed_To_Insurer_SpecialChars()'><b>test_Addressed_To_Insurer_SpecialChars</b><br>Test class: Register.Test_27_AddressedToInsurer_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_27_AddressedToInsurer_Negative@12c7a01b</td></tr>
+<tr>
+<td title='Register.Test_29_Mode_Negative.test_Mode_Alphabetical()'><b>test_Mode_Alphabetical</b><br>Test class: Register.Test_29_Mode_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_29_Mode_Negative@2826f61</td></tr>
+<tr>
+<td title='Register.Test_30_PolicyProposalCertClaimNumber_Negative.test_Policy_Proposal_Cert_Claim_Number_Null()'><b>test_Policy_Proposal_Cert_Claim_Number_Null</b><br>Test class: Register.Test_30_PolicyProposalCertClaimNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_30_PolicyProposalCertClaimNumber_Negative@62727399</td></tr>
+<tr>
+<td title='Register.Test_14_StateIDAndDistrictID_Negative.test_Invalid_DistrictID()'><b>test_Invalid_DistrictID</b><br>Test class: Register.Test_14_StateIDAndDistrictID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_14_StateIDAndDistrictID_Negative@16c63f5</td></tr>
+<tr>
+<td title='Register.Test_21_PolicyTypeID_Negative.test_Policy_Type_ID_Invalid()'><b>test_Policy_Type_ID_Invalid</b><br>Test class: Register.Test_21_PolicyTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_21_PolicyTypeID_Negative@74eb909f</td></tr>
+<tr>
+<td title='Register.Test_22_ComplaintTypeID_Negative.test_Complaint_Type_ID_Null()'><b>test_Complaint_Type_ID_Null</b><br>Test class: Register.Test_22_ComplaintTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_22_ComplaintTypeID_Negative@28ec166e</td></tr>
+<tr>
+<td title='Register.Test_18_EntityComplaintReferenceNumber_Negative.test_Duplicate_EntityComplaintReferenceNumber()'><b>test_Duplicate_EntityComplaintReferenceNumber</b><br>Test class: Register.Test_18_EntityComplaintReferenceNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_18_EntityComplaintReferenceNumber_Negative@6986bbaf</td></tr>
+<tr>
+<td title='Register.Test_4_UserType_Negative.test_registerComplaint_NumericUserType()'><b>test_registerComplaint_NumericUserType</b><br>Test class: Register.Test_4_UserType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_4_UserType_Negative@49cb9cb5</td></tr>
+<tr>
+<td title='Register.Test_17_MobileNumber_Negative.test_moreThen_10_Digit_MobileNumber()'><b>test_moreThen_10_Digit_MobileNumber</b><br>Test class: Register.Test_17_MobileNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_17_MobileNumber_Negative@b1712f3</td></tr>
+<tr>
+<td title='Register.Test_28_TransLoginId_Negative.test_Trans_Login_Id_Null()'><b>test_Trans_Login_Id_Null</b><br>Test class: Register.Test_28_TransLoginId_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_28_TransLoginId_Negative@13d9b21f</td></tr>
+<tr>
+<td title='Register.Test_15_ComplaintAgainstTypeID_Negative.test_Alphabatical_ComplaintAgainstTypeID()'><b>test_Alphabatical_ComplaintAgainstTypeID</b><br>Test class: Register.Test_15_ComplaintAgainstTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_15_ComplaintAgainstTypeID_Negative@35229f85</td></tr>
+<tr>
+<td title='Register.Test_17_MobileNumber_Negative.test_lessThen_10_Digit_MobileNumber()'><b>test_lessThen_10_Digit_MobileNumber</b><br>Test class: Register.Test_17_MobileNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_17_MobileNumber_Negative@b1712f3</td></tr>
+<tr>
+<td title='Register.Test_26_Option_Negative.test_Option_Null()'><b>test_Option_Null</b><br>Test class: Register.Test_26_Option_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_26_Option_Negative@4df5bcb4</td></tr>
+<tr>
+<td title='Register.Test_15_ComplaintAgainstTypeID_Negative.test_Null_ComplaintAgainstTypeID()'><b>test_Null_ComplaintAgainstTypeID</b><br>Test class: Register.Test_15_ComplaintAgainstTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_15_ComplaintAgainstTypeID_Negative@35229f85</td></tr>
+<tr>
+<td title='Register.Test_2_RegisterComplaint_PastDate.test_registerComplaint_PastDate()'><b>test_registerComplaint_PastDate</b><br>Test class: Register.Test_2_RegisterComplaint_PastDate</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_2_RegisterComplaint_PastDate@12ed9db6</td></tr>
+<tr>
+<td title='Register.Test_11_BrokerLicenseNumber_Negative.test_registerComplaint_Null_BrokerLicenseNumber()'><b>test_registerComplaint_Null_BrokerLicenseNumber</b><br>Test class: Register.Test_11_BrokerLicenseNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_11_BrokerLicenseNumber_Negative@76884e4b</td></tr>
+<tr>
+<td title='Register.Test_13_IntermediaryLicenseNumber_Negative.test_Null_IntermediaryLicenseNumber()'><b>test_Null_IntermediaryLicenseNumber</b><br>Test class: Register.Test_13_IntermediaryLicenseNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_13_IntermediaryLicenseNumber_Negative@2a898881</td></tr>
+<tr>
+<td title='Register.Test_1_RegisterComplaint_PresentDate.test_registerComplaint_PresentDate()'><b>test_registerComplaint_PresentDate</b><br>Test class: Register.Test_1_RegisterComplaint_PresentDate</td>
+<td></td>
+<td>3</td>
+<td>Register.Test_1_RegisterComplaint_PresentDate@2dc995f4</td></tr>
+<tr>
+<td title='Register.Test_16_FirstName_Negative.test_maxLength_exceeding_FirstName_Field()'><b>test_maxLength_exceeding_FirstName_Field</b><br>Test class: Register.Test_16_FirstName_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_16_FirstName_Negative@6d3c5255</td></tr>
+<tr>
+<td title='Register.Test_24_SourceOfComplaint_Negative.test_Source_Of_Complaint_Alphabetical()'><b>test_Source_Of_Complaint_Alphabetical</b><br>Test class: Register.Test_24_SourceOfComplaint_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_24_SourceOfComplaint_Negative@2da59753</td></tr>
+<tr>
+<td title='Register.Test_24_SourceOfComplaint_Negative.test_Source_Of_Complaint_Invalid()'><b>test_Source_Of_Complaint_Invalid</b><br>Test class: Register.Test_24_SourceOfComplaint_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_24_SourceOfComplaint_Negative@2da59753</td></tr>
+<tr>
+<td title='Register.Test_31_IdentifierType_Negative.test_Identifier_Type_Null()'><b>test_Identifier_Type_Null</b><br>Test class: Register.Test_31_IdentifierType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_31_IdentifierType_Negative@4d9ac0b4</td></tr>
+<tr>
+<td title='Register.Test_26_Option_Negative.test_Option_SpecialChars()'><b>test_Option_SpecialChars</b><br>Test class: Register.Test_26_Option_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_26_Option_Negative@4df5bcb4</td></tr>
+<tr>
+<td title='Register.Test_3_RegisterComplaint_Dates_Negative.test_complaintDate_And_ComplaintReceiptDate_AsChracter()'><b>test_complaintDate_And_ComplaintReceiptDate_AsChracter</b><br>Test class: Register.Test_3_RegisterComplaint_Dates_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_3_RegisterComplaint_Dates_Negative@4ff4357f</td></tr>
+<tr>
+<td title='Register.Test_23_ComplaintDescriptionTypeID_Negative.test_Complaint_Description_Type_ID_Invalid_Numeric()'><b>test_Complaint_Description_Type_ID_Invalid_Numeric</b><br>Test class: Register.Test_23_ComplaintDescriptionTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_23_ComplaintDescriptionTypeID_Negative@2eee3069</td></tr>
+<tr>
+<td title='Register.Test_3_RegisterComplaint_Dates_Negative.test_complaintDate_And_ComplaintReceiptDate_Zero()'><b>test_complaintDate_And_ComplaintReceiptDate_Zero</b><br>Test class: Register.Test_3_RegisterComplaint_Dates_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_3_RegisterComplaint_Dates_Negative@4ff4357f</td></tr>
+<tr>
+<td title='Register.Test_31_IdentifierType_Negative.test_Identifier_type_Invalid()'><b>test_Identifier_type_Invalid</b><br>Test class: Register.Test_31_IdentifierType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_31_IdentifierType_Negative@4d9ac0b4</td></tr>
+<tr>
+<td title='Register.Test_22_ComplaintTypeID_Negative.test_Complaint_Type_ID_Invalid_Numeric()'><b>test_Complaint_Type_ID_Invalid_Numeric</b><br>Test class: Register.Test_22_ComplaintTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_22_ComplaintTypeID_Negative@28ec166e</td></tr>
+<tr>
+<td title='Register.Test_29_Mode_Negative.test_Mode_Invalid()'><b>test_Mode_Invalid</b><br>Test class: Register.Test_29_Mode_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_29_Mode_Negative@2826f61</td></tr>
+<tr>
+<td title='Register.Test_29_Mode_Negative.test_Mode_SpecialChars()'><b>test_Mode_SpecialChars</b><br>Test class: Register.Test_29_Mode_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_29_Mode_Negative@2826f61</td></tr>
+<tr>
+<td title='Register.Test_24_SourceOfComplaint_Negative.test_Source_Of_Complaint_Null()'><b>test_Source_Of_Complaint_Null</b><br>Test class: Register.Test_24_SourceOfComplaint_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_24_SourceOfComplaint_Negative@2da59753</td></tr>
+<tr>
+<td title='Register.Test_27_AddressedToInsurer_Negative.test_Addressed_To_Insurer_Numeric()'><b>test_Addressed_To_Insurer_Numeric</b><br>Test class: Register.Test_27_AddressedToInsurer_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_27_AddressedToInsurer_Negative@12c7a01b</td></tr>
+<tr>
+<td title='Register.Test_31_IdentifierType_Negative.test_Identifier_type_Alphabetical()'><b>test_Identifier_type_Alphabetical</b><br>Test class: Register.Test_31_IdentifierType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_31_IdentifierType_Negative@4d9ac0b4</td></tr>
+<tr>
+<td title='Register.Test_28_TransLoginId_Negative.test_Trans_Login_Id_Mapping_Invalid()'><b>test_Trans_Login_Id_Mapping_Invalid</b><br>Test class: Register.Test_28_TransLoginId_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_28_TransLoginId_Negative@13d9b21f</td></tr>
+<tr>
+<td title='Register.Test_4_UserType_Negative.test_registerComplaint_InvalidUserType()'><b>test_registerComplaint_InvalidUserType</b><br>Test class: Register.Test_4_UserType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_4_UserType_Negative@49cb9cb5</td></tr>
+<tr>
+<td title='Register.Test_13_IntermediaryLicenseNumber_Negative.test_Invalid_IntermediaryLicenseNumber()'><b>test_Invalid_IntermediaryLicenseNumber</b><br>Test class: Register.Test_13_IntermediaryLicenseNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_13_IntermediaryLicenseNumber_Negative@2a898881</td></tr>
+<tr>
+<td title='Register.Test_20_InsuranceTypeID_Negative.test_Insurance_Type_ID_Invalid()'><b>test_Insurance_Type_ID_Invalid</b><br>Test class: Register.Test_20_InsuranceTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_20_InsuranceTypeID_Negative@4758820d</td></tr>
+<tr>
+<td title='Register.Test_23_ComplaintDescriptionTypeID_Negative.test_Complaint_Description_Type_ID_Null()'><b>test_Complaint_Description_Type_ID_Null</b><br>Test class: Register.Test_23_ComplaintDescriptionTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_23_ComplaintDescriptionTypeID_Negative@2eee3069</td></tr>
+<tr>
+<td title='Register.Test_31_IdentifierType_Negative.test_Identifier_type_SpecialChars()'><b>test_Identifier_type_SpecialChars</b><br>Test class: Register.Test_31_IdentifierType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_31_IdentifierType_Negative@4d9ac0b4</td></tr>
+<tr>
+<td title='Register.Test_15_ComplaintAgainstTypeID_Negative.test_Invalid_ComplaintAgainstTypeID()'><b>test_Invalid_ComplaintAgainstTypeID</b><br>Test class: Register.Test_15_ComplaintAgainstTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_15_ComplaintAgainstTypeID_Negative@35229f85</td></tr>
+<tr>
+<td title='Register.Test_29_Mode_Negative.test_Mode_Null()'><b>test_Mode_Null</b><br>Test class: Register.Test_29_Mode_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_29_Mode_Negative@2826f61</td></tr>
+<tr>
+<td title='Register.Test_28_TransLoginId_Negative.test_Trans_Login_Id_Invalid()'><b>test_Trans_Login_Id_Invalid</b><br>Test class: Register.Test_28_TransLoginId_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_28_TransLoginId_Negative@13d9b21f</td></tr>
+<tr>
+<td title='Register.Test_15_ComplaintAgainstTypeID_Negative.test_SpecialCharacter_ComplaintAgainstTypeID()'><b>test_SpecialCharacter_ComplaintAgainstTypeID</b><br>Test class: Register.Test_15_ComplaintAgainstTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_15_ComplaintAgainstTypeID_Negative@35229f85</td></tr>
+<tr>
+<td title='Register.Test_25_PolicyNumber_Negative.test_Policy_Number_Null()'><b>test_Policy_Number_Null</b><br>Test class: Register.Test_25_PolicyNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_25_PolicyNumber_Negative@5629510</td></tr>
+<tr>
+<td title='Register.Test_14_StateIDAndDistrictID_Negative.test_Null_StateID()'><b>test_Null_StateID</b><br>Test class: Register.Test_14_StateIDAndDistrictID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_14_StateIDAndDistrictID_Negative@16c63f5</td></tr>
+<tr>
+<td title='Register.Test_12_IntermediaryName_Negative.test_Null_IntermediaryName()'><b>test_Null_IntermediaryName</b><br>Test class: Register.Test_12_IntermediaryName_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_12_IntermediaryName_Negative@126945f9</td></tr>
+<tr>
+<td title='Register.Test_12_IntermediaryName_Negative.test_Invalid_IntermediaryName()'><b>test_Invalid_IntermediaryName</b><br>Test class: Register.Test_12_IntermediaryName_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_12_IntermediaryName_Negative@126945f9</td></tr>
+<tr>
+<td title='Register.Test_3_RegisterComplaint_Dates_Negative.test_complaintDateAndReceiptDate_Null()'><b>test_complaintDateAndReceiptDate_Null</b><br>Test class: Register.Test_3_RegisterComplaint_Dates_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_3_RegisterComplaint_Dates_Negative@4ff4357f</td></tr>
+<tr>
+<td title='Register.Test_20_InsuranceTypeID_Negative.test_Insurance_Type_ID_Null()'><b>test_Insurance_Type_ID_Null</b><br>Test class: Register.Test_20_InsuranceTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_20_InsuranceTypeID_Negative@4758820d</td></tr>
+<tr>
+<td title='Register.Test_8_RegisterComplaint_AgainstAgent.test_registerComplaint_Against_Agent()'><b>test_registerComplaint_Against_Agent</b><br>Test class: Register.Test_8_RegisterComplaint_AgainstAgent</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_8_RegisterComplaint_AgainstAgent@50468873</td></tr>
+<tr>
+<td title='Register.Test_16_FirstName_Negative.test_Null_FirstName()'><b>test_Null_FirstName</b><br>Test class: Register.Test_16_FirstName_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_16_FirstName_Negative@6d3c5255</td></tr>
+<tr>
+<td title='Register.Test_23_ComplaintDescriptionTypeID_Negative.test_Complaint_Description_Type_ID_Invalid()'><b>test_Complaint_Description_Type_ID_Invalid</b><br>Test class: Register.Test_23_ComplaintDescriptionTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_23_ComplaintDescriptionTypeID_Negative@2eee3069</td></tr>
+<tr>
+<td title='Register.Test_21_PolicyTypeID_Negative.test_Policy_Type_ID_Invalid_Numeric()'><b>test_Policy_Type_ID_Invalid_Numeric</b><br>Test class: Register.Test_21_PolicyTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_21_PolicyTypeID_Negative@74eb909f</td></tr>
+<tr>
+<td title='Register.Test_19_ComplaintDetails_Negative.test_maxLength_exceeding_complaintDetails_field()'><b>test_maxLength_exceeding_complaintDetails_field</b><br>Test class: Register.Test_19_ComplaintDetails_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_19_ComplaintDetails_Negative@4879dfad</td></tr>
+<tr>
+<td title='Register.Test_10_RegisterComplaint_Against_NonLifeInsuranceCompany.test_registerComplaint_Against_NonLife_InsuranceCompany()'><b>test_registerComplaint_Against_NonLife_InsuranceCompany</b><br>Test class: Register.Test_10_RegisterComplaint_Against_NonLifeInsuranceCompany</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_10_RegisterComplaint_Against_NonLifeInsuranceCompany@5f0e9815</td></tr>
+<tr>
+<td title='Register.Test_25_PolicyNumber_Negative.test_Policy_Number_Exceeding_length()'><b>test_Policy_Number_Exceeding_length</b><br>Test class: Register.Test_25_PolicyNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_25_PolicyNumber_Negative@5629510</td></tr>
+<tr>
+<td title='Register.Test_11_BrokerLicenseNumber_Negative.test_registerComplaint_Invalid_BrokerLicenseNumber()'><b>test_registerComplaint_Invalid_BrokerLicenseNumber</b><br>Test class: Register.Test_11_BrokerLicenseNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_11_BrokerLicenseNumber_Negative@76884e4b</td></tr>
+<tr>
+<td title='Register.Test_17_MobileNumber_Negative.test_MobileNumber_As_AlphabaticCharacter()'><b>test_MobileNumber_As_AlphabaticCharacter</b><br>Test class: Register.Test_17_MobileNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_17_MobileNumber_Negative@b1712f3</td></tr>
+<tr>
+<td title='Register.Test_27_AddressedToInsurer_Negative.test_Addressed_To_Insurer_Invalid()'><b>test_Addressed_To_Insurer_Invalid</b><br>Test class: Register.Test_27_AddressedToInsurer_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_27_AddressedToInsurer_Negative@12c7a01b</td></tr>
+<tr>
+<td title='Register.Test_6_RegisterComplaint_AgainstSurveyor.test_registerComplaint_Against_Surveyor()'><b>test_registerComplaint_Against_Surveyor</b><br>Test class: Register.Test_6_RegisterComplaint_AgainstSurveyor</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_6_RegisterComplaint_AgainstSurveyor@2b4c1d96</td></tr>
+<tr>
+<td title='Register.Test_3_RegisterComplaint_Dates_Negative.test_registerComplaint_InvalidDateFormat()'><b>test_registerComplaint_InvalidDateFormat</b><br>Test class: Register.Test_3_RegisterComplaint_Dates_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_3_RegisterComplaint_Dates_Negative@4ff4357f</td></tr>
+<tr>
+<td title='Register.Test_22_ComplaintTypeID_Negative.test_Complaint_Type_ID_Invalid()'><b>test_Complaint_Type_ID_Invalid</b><br>Test class: Register.Test_22_ComplaintTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_22_ComplaintTypeID_Negative@28ec166e</td></tr>
+<tr>
+<td title='Register.Test_3_RegisterComplaint_Dates_Negative.test_registerComplaint_FutureDate()'><b>test_registerComplaint_FutureDate</b><br>Test class: Register.Test_3_RegisterComplaint_Dates_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_3_RegisterComplaint_Dates_Negative@4ff4357f</td></tr>
+<tr>
+<td title='Register.Test_19_ComplaintDetails_Negative.test_ComplaintDetails_Contain_SpecialCharacter()'><b>test_ComplaintDetails_Contain_SpecialCharacter</b><br>Test class: Register.Test_19_ComplaintDetails_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_19_ComplaintDetails_Negative@4879dfad</td></tr>
+<tr>
+<td title='Register.Test_9_RegisterComplaint_Against_LifeInsuranceCompany.test_registerComplaint_Against_Life_InsuranceCompany()'><b>test_registerComplaint_Against_Life_InsuranceCompany</b><br>Test class: Register.Test_9_RegisterComplaint_Against_LifeInsuranceCompany</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_9_RegisterComplaint_Against_LifeInsuranceCompany@146587a2</td></tr>
+<tr>
+<td title='Register.Test_4_UserType_Negative.test_registerComplaint_NullUserType()'><b>test_registerComplaint_NullUserType</b><br>Test class: Register.Test_4_UserType_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_4_UserType_Negative@49cb9cb5</td></tr>
+<tr>
+<td title='Register.Test_7_RegisterComplaint_AgainstTPA.test_registerComplaint_Against_TPA()'><b>test_registerComplaint_Against_TPA</b><br>Test class: Register.Test_7_RegisterComplaint_AgainstTPA</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_7_RegisterComplaint_AgainstTPA@45fd9a4d</td></tr>
+<tr>
+<td title='Register.Test_5_RegisterComplaint_AgainstBroker.test_registerComplaint_Against_Broker()'><b>test_registerComplaint_Against_Broker</b><br>Test class: Register.Test_5_RegisterComplaint_AgainstBroker</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_5_RegisterComplaint_AgainstBroker@55322aab</td></tr>
+<tr>
+<td title='Register.Test_14_StateIDAndDistrictID_Negative.test_Invalid_StateID()'><b>test_Invalid_StateID</b><br>Test class: Register.Test_14_StateIDAndDistrictID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_14_StateIDAndDistrictID_Negative@16c63f5</td></tr>
+<tr>
+<td title='Register.Test_18_EntityComplaintReferenceNumber_Negative.test_Null_EntityComplaintReferenceNumber()'><b>test_Null_EntityComplaintReferenceNumber</b><br>Test class: Register.Test_18_EntityComplaintReferenceNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_18_EntityComplaintReferenceNumber_Negative@6986bbaf</td></tr>
+<tr>
+<td title='Register.Test_24_SourceOfComplaint_Negative.test_Source_Of_Complaint_SpecialChars()'><b>test_Source_Of_Complaint_SpecialChars</b><br>Test class: Register.Test_24_SourceOfComplaint_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_24_SourceOfComplaint_Negative@2da59753</td></tr>
+<tr>
+<td title='Register.Test_27_AddressedToInsurer_Negative.test_Addressed_To_Insurer_Null()'><b>test_Addressed_To_Insurer_Null</b><br>Test class: Register.Test_27_AddressedToInsurer_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_27_AddressedToInsurer_Negative@12c7a01b</td></tr>
+<tr>
+<td title='Register.Test_21_PolicyTypeID_Negative.test_Policy_Type_ID_Null()'><b>test_Policy_Type_ID_Null</b><br>Test class: Register.Test_21_PolicyTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_21_PolicyTypeID_Negative@74eb909f</td></tr>
+<tr>
+<td title='Register.Test_25_PolicyNumber_Negative.test_Policy_Number_Duplicate()'><b>test_Policy_Number_Duplicate</b><br>Test class: Register.Test_25_PolicyNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_25_PolicyNumber_Negative@5629510</td></tr>
+<tr>
+<td title='Register.Test_27_AddressedToInsurer_Negative.test_Addressed_To_Insurer_With_N()'><b>test_Addressed_To_Insurer_With_N</b><br>Test class: Register.Test_27_AddressedToInsurer_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_27_AddressedToInsurer_Negative@12c7a01b</td></tr>
+<tr>
+<td title='Register.Test_17_MobileNumber_Negative.test_MobileNumber_As_SpecialCharacter()'><b>test_MobileNumber_As_SpecialCharacter</b><br>Test class: Register.Test_17_MobileNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_17_MobileNumber_Negative@b1712f3</td></tr>
+<tr>
+<td title='Register.Test_17_MobileNumber_Negative.test_Null_MobileNumber_Field()'><b>test_Null_MobileNumber_Field</b><br>Test class: Register.Test_17_MobileNumber_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_17_MobileNumber_Negative@b1712f3</td></tr>
+<tr>
+<td title='Register.Test_20_InsuranceTypeID_Negative.test_Insurance_Type_ID_Invalid_Numeric()'><b>test_Insurance_Type_ID_Invalid_Numeric</b><br>Test class: Register.Test_20_InsuranceTypeID_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_20_InsuranceTypeID_Negative@4758820d</td></tr>
+<tr>
+<td title='Register.Test_19_ComplaintDetails_Negative.test_Null_ComplaintDetails()'><b>test_Null_ComplaintDetails</b><br>Test class: Register.Test_19_ComplaintDetails_Negative</td>
+<td></td>
+<td>0</td>
+<td>Register.Test_19_ComplaintDetails_Negative@4879dfad</td></tr>
+</table><p>
+</body>
+</html>

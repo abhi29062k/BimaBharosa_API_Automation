@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaAPISuite">
+    <test name="RegisterModule">
+        <classes>
+            <class name="Update.Test_1_StatusChangeDate_Validation"></class>
+            <class name="Update.Test_2_NewComplaint"></class>
+            <class name="Update.Test_3_AckComplaint"></class>
+            <class name="Update.Test_4_PenComplaint"></class>
+            <class name="Update.Test_5_Ack_Pen_MandateField_Validation"></class>
+            <class name="Update.Test_6_pen_to_Att_mand_field_validation"></class>
+            <class name="Update.Test_7_Att_to_Complaint"></class>
+            <class name="Update.Test_8_Type_Of_Disposal"></class>
+            <class name="Update.Test_9_EscComplaint"></class>
+            <class name="Update.Test_10_RopComplaint"></class>
+            <class name="Update.Test_11_Cls_Negative"></class>
+            <class name="Update.Test_12_not_pertain_to"></class>
+            <class name="Update.Test_13_branch_code_validation"></class>
+            <class name="Update.Test_14_status_update_with_diff_transLogin_Id"></class>
+            <class name="Update.Test_15_UpdateComplaint_Positive"></class>
+        </classes>
+    </test>
+</suite>

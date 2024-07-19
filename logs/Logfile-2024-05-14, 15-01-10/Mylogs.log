@@ -1,0 +1,62 @@
+2024-05-14T15:01:10,391 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-05-14T15:01:12,346 [main] ERROR (Request.java:77) - Status code is not as expected
+2024-05-14T15:01:12,355 [main] ERROR (Main.java:128) - java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.xmlPath()" because "response" is null
+	at Response.UpdateResponse.<init>(UpdateResponse.java:9)
+	at Update.Test_5_Ack_Pen_MandateField_Validation.Update_Status_With_Removed_Entity_ref_Id_field_negative_TC(Test_5_Ack_Pen_MandateField_Validation.java:267)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2024-05-14T15:01:12,357 [main] INFO  (Main.java:131) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">
+    <soapenv:Header>
+        <web:Authenticate_Info>
+            <!--Optional:-->
+            <web:UserName>IRDAUSER</web:UserName>
+            <!--Optional:-->
+            <web:Password>IRDAUSER</web:Password>
+            <web:EntityId>31</web:EntityId>
+        </web:Authenticate_Info>
+    </soapenv:Header>
+    <soapenv:Body>
+        <web:UpdateComplaint>
+            <!--Optional:-->
+            <web:InputElement>
+                <Complaints>
+                    <Complaint>
+                        <IRDA_Token_Number>05-24-001759</IRDA_Token_Number>
+                        <Status_Change_Date>14-05-2024</Status_Change_Date>
+                        <Complaint_Status_Id>2</Complaint_Status_Id>
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>
+                        <Option>1</Option>
+                        <Mode>2</Mode>
+                        
+                    </Complaint>
+                </Complaints>
+            </web:InputElement>
+        </web:UpdateComplaint>
+    </soapenv:Body>
+</soapenv:Envelope>

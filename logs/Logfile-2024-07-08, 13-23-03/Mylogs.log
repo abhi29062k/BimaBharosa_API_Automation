@@ -1,0 +1,53 @@
+2024-07-08T13:23:04,132 [main] INFO  (Main.java:40) - -------------Test Execution started--------------
+2024-07-08T13:23:08,764 [main] INFO  (Test_15_UpdateComplaint_Positive.java:527) - Closure Request to IRDIA marked Successfully. Note: due to Functional issue data not getting updated in Database.
+2024-07-08T13:23:08,771 [main] INFO  (Main.java:132) - 
+ Request : 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.Insurer.com/webservices/">  
+    <soapenv:Header> 
+        <web:Authenticate_Info> 
+            <!--Optional:-->  
+            <web:UserName>IRDAUSER</web:UserName>  
+            <!--Optional:-->  
+            <web:Password>IRDAUSER</web:Password>  
+            <web:EntityId>31</web:EntityId> 
+        </web:Authenticate_Info> 
+    </soapenv:Header>  
+    <soapenv:Body> 
+        <web:UpdateComplaint> 
+            <!--Optional:-->  
+            <web:InputElement> 
+                <Complaints> 
+                    <Complaint> 
+                        <IRDA_Token_Number>07-24-000358</IRDA_Token_Number>  
+                        <Status_Change_Date>08-07-2024</Status_Change_Date>  
+                        <Complaint_Status_Id>4</Complaint_Status_Id>  
+                        <Trans_Login_Id>SILICADMIN</Trans_Login_Id>  
+                        <Option>1</Option>  
+                        <Mode>2</Mode>  
+                        <Entity_Complaint_Ref_Number>TEST203275</Entity_Complaint_Ref_Number>
+                    <Type_of_disposal>1</Type_of_disposal><Others_Clsr_Additional_Info>testing</Others_Clsr_Additional_Info><Others_Closure_Description>testing</Others_Closure_Description><Request_IRDAI_For_Closure>1</Request_IRDAI_For_Closure><Entity_Closure_Req_Desc>Complaint closure request</Entity_Closure_Req_Desc><Closure_Request_Letter_Date>01-01-2024</Closure_Request_Letter_Date><Date_Of_Honoring_Service>01-01-2024</Date_Of_Honoring_Service><Insurer_Resolution_Letter_date>01-01-2024</Insurer_Resolution_Letter_date><Closure_Violation_Remarks>Complaint Closure</Closure_Violation_Remarks><Regulatory_Improvement_Suggestion>testing</Regulatory_Improvement_Suggestion><Is_Complainant_Informed>Y</Is_Complainant_Informed><Closure_Action_Suggested>Closure request</Closure_Action_Suggested></Complaint> 
+                </Complaints> 
+            </web:InputElement> 
+        </web:UpdateComplaint> 
+    </soapenv:Body> 
+</soapenv:Envelope>
+2024-07-08T13:23:08,776 [main] INFO  (Main.java:133) - 
+ Response : 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <UpdateComplaintResponse xmlns="http://www.Insurer.com/webservices/">
+      <UpdateComplaintResult>
+        <RESULT xmlns="">
+          <COMPLAINTDETAILS>
+            <IRDA_TOKEN_NUMBER>07-24-000358</IRDA_TOKEN_NUMBER>
+            <ENTITY_COMPLAINT_REF_NUMBER>TEST203275</ENTITY_COMPLAINT_REF_NUMBER>
+            <ERROR_CODES/>
+          </COMPLAINTDETAILS>
+        </RESULT>
+      </UpdateComplaintResult>
+    </UpdateComplaintResponse>
+  </soap:Body>
+</soap:Envelope>
+2024-07-08T13:23:08,777 [main] INFO  (Main.java:134) - -------------Test Execution ended---------------
+
+
